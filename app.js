@@ -1,0 +1,1 @@
+const q=document.querySelector('#q');const cards=document.querySelectorAll('.card');if(q){q.addEventListener('input',()=>{const term=q.value.toLowerCase();cards.forEach(c=>{const t=c.dataset.title||'';c.style.display=t.includes(term)?'':'none';});});}
